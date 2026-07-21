@@ -9,9 +9,9 @@
  * with a required-items presentability gate, and stdout reporting with optional trailing JSON.
  * Flow: argv -> checklist -> score -> human summary -> optional JSON payload.
  *
- * @testing CLI: npx tsx skills/chooseable-options/scripts/check-options-completeness.ts --options 6
- * @testing CLI: npx tsx skills/chooseable-options/scripts/check-options-completeness.ts --options 4
- * @testing CLI: npx tsx skills/chooseable-options/scripts/check-options-completeness.ts --options 6 --json
+ * @testing CLI: npx tsx .agents/skills/chooseable-options/scripts/check-options-completeness.ts --options 6
+ * @testing CLI: npx tsx .agents/skills/chooseable-options/scripts/check-options-completeness.ts --options 4
+ * @testing CLI: npx tsx .agents/skills/chooseable-options/scripts/check-options-completeness.ts --options 6 --json
  * @testing CLI manual: from the repository root rerun the `--json` command above for the same argv and confirm the trailing `CompletenessReport` checklist `checked` flags match the printed per-row icons and the Presentable summary line.
  *
  * @see skills/chooseable-options/SKILL.md - Canonical skill text that defines the checklist criteria and coaching expectations this script encodes as a deterministic scorecard.
