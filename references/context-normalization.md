@@ -45,6 +45,13 @@ Normalize scenarios in this order:
 Use `CURRENT_EXTERNAL_FACTS_REQUIRED` as an overlay, not as the first scenario. If current external
 facts are decisive, keep the current scenario but elevate a research option.
 
+Use `INSTRUMENTATION_SURFACE_MISSING` as an overlay, not as the first scenario. When the named
+behavior has no CLI-and-human pair, or only an agent can read the facts, keep the current scenario
+and show `IMPROVE_INSTRUMENTATION`. Do not make it the recommended first route. Zero runnable
+methods on a required baseline stay in `plan`; this overlay does not run the repair. When
+`step-by-step` or `promote-main-to-development` owns the menu, use the token that skill prints.
+The routing matrix names those offers.
+
 ## Scenario Keys
 
 | `SCENARIO_KEY` | Detect when | Minimum evidence | Recommended first route |
@@ -56,6 +63,7 @@ facts are decisive, keep the current scenario but elevate a research option.
 | `SPECIALIST_SURFACE_KNOWN` | a concrete domain lane is already obvious | domain signal; target app/system; current artifact | direct specialist skill or relevant expert bridge |
 | `EXPLANATION_SURFACE_REQUIRED` | the user needs a lower-cognitive-load explanation before choosing a lane | source artifact or code surface; exact question; intended downstream action | `explain/SKILL.md` |
 | `OPEN_ENDED_NEXT_STEP` | the user wants guidance but no strong artifact or lane exists | current request; known repo state; weak evidence summary | keep routing; recommend artifact creation or blocker resolution first |
+| `INSTRUMENTATION_SURFACE_MISSING` | overlay: the named behavior has no CLI-and-human pair, or only an agent can read the facts | behavior name; which half is missing; not live watching and not an explain request | keep the base scenario's first route; offer `IMPROVE_INSTRUMENTATION` → `improve-instrumentation/SKILL.md` |
 
 ## Route-Selection Rules
 
