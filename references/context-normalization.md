@@ -63,7 +63,7 @@ The routing matrix names those offers.
 | `SPECIALIST_SURFACE_KNOWN` | a concrete domain lane is already obvious | domain signal; target app/system; current artifact | direct specialist skill or relevant expert bridge |
 | `EXPLANATION_SURFACE_REQUIRED` | the user needs a lower-cognitive-load explanation before choosing a lane | source artifact or code surface; exact question; intended downstream action | `explain/SKILL.md` |
 | `OPEN_ENDED_NEXT_STEP` | the user wants guidance but no strong artifact or lane exists | current request; known repo state; weak evidence summary | keep routing; recommend artifact creation or blocker resolution first |
-| `INSTRUMENTATION_SURFACE_MISSING` | overlay: the named behavior has no CLI-and-human pair, or only an agent can read the facts | behavior name; which half is missing; not live watching and not an explain request | keep the base scenario's first route; offer `IMPROVE_INSTRUMENTATION` → `improve-instrumentation/SKILL.md` |
+| `INSTRUMENTATION_SURFACE_MISSING` | overlay: the named behavior has no CLI-and-human pair, or only an agent can read the facts; a long run has no one-shot status; a script has no repeated timing record | behavior name; which half is missing; not a live loop and not an explain request | keep the base scenario's first route; offer `IMPROVE_INSTRUMENTATION` → `improve-instrumentation/SKILL.md` |
 
 ## Route-Selection Rules
 
