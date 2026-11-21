@@ -1,0 +1,1 @@
+A branching menu turns an open question into a short list of next steps.
