@@ -24,7 +24,7 @@ mkdir -p ~/.claude/skills
 git -C ~/.claude/skills clone git@github.com:gg-skills/chooseable-options.git
 ```
 
-Restart your agent or reload skills after installation. See the parent [`skills` catalog repo](https://github.com/gg-skills/skills) for the full catalog.
+Restart your agent or reload skills after installation. Browse public skills on the [GG Skills organization profile](https://github.com/gg-skills).
 
 ## When to use
 
@@ -153,7 +153,7 @@ chooseable-options/
 - `references/context-normalization.md` — scenario detection order, evidence inputs, escalation rules, route-selection and tie-break logic, output assembly rules.
 - `references/routing-matrix.md` — reviewed scenario routing lanes, in-batch workflow skill rows, expert capability bridges, pending review queue.
 - `references/ask-user-harness.md` — detect the current harness's Ask User tool and map tokens onto native options.
-- [gg-skills](https://github.com/gg-skills/skills) — parent repo with all skills in the unprefixed skills namespace.
+- [GG Skills](https://github.com/gg-skills) — public skills in the unprefixed namespace.
 
 ## Caveats
 
