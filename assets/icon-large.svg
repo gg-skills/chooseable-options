@@ -1,10 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Skill icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 64 64" fill="none" role="img" aria-label="GG → Chooseable Options → Decision Menus">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#4f46e5"/>
-      <stop offset="1" stop-color="#9333ea"/>
+    <linearGradient id="chooseable-options-background" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" stop-color="#0E172A"/>
+      <stop offset="1" stop-color="#09101D"/>
     </linearGradient>
+    <radialGradient id="chooseable-options-glow" cx="45" cy="17" r="53" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22C55E" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#22C55E" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect width="160" height="160" rx="35" fill="url(#g)"/>
-  <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="54" font-weight="800" fill="#ffffff">AW</text>
+  <rect x="6" y="6" width="52" height="52" rx="14" fill="url(#chooseable-options-background)"/>
+  <rect x="6" y="6" width="52" height="52" rx="14" fill="url(#chooseable-options-glow)"/>
+  <path d="M19 32h5m0 0v-10h7m-7 10h7m-7 0v10h7" stroke="#86EFAC" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="17" cy="32" r="3.2" fill="#F8FAFC"/>
+  <g fill="#102A28" stroke="#F8FAFC" stroke-width="2">
+    <rect x="31" y="18.5" width="17" height="7" rx="2"/>
+    <rect x="31" y="28.5" width="17" height="7" rx="2" fill="#F8FAFC"/>
+    <rect x="31" y="38.5" width="17" height="7" rx="2"/>
+  </g>
+  <path d="M35 22h7m-7 20h7" stroke="#86EFAC" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M35 32h7" stroke="#166534" stroke-width="1.5" stroke-linecap="round"/>
 </svg>
